@@ -127,7 +127,7 @@ All properties for a tool.
 
 ## AI Properties
 
-All properties for the AI capabilities of the extension. Alternatively, this object can be written in a `ai.json` (or `ai.yaml`) file at the root of the extension.
+All properties for the AI capabilities of the extension. Ideally, this object would be written as an `ai.yaml` file at the root of the extension.
 
 | Property     | Description                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
