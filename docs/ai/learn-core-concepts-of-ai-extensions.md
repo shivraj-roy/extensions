@@ -258,7 +258,7 @@ Expectations are used to check if the AI response matches the expected behavior.
 
 ## AI File
 
-Your instructions or evals can start to become rather long and clutter your `package.json` file, for this reason, we encourage you to use a `ai.yaml` file in the root of your extension next to the `package.json` file.
+Your instructions or evals can start to become rather long and clutter your `package.json` file, for this reason, we recommend you to use a `ai.yaml` file in the root of your extension next to the `package.json` file.
 
 The structure of the AI file is the same as in the `package.json` file.
 
