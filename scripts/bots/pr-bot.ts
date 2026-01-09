@@ -73,13 +73,19 @@ export default async ({ github, context }: API) => {
 
   const isDocsPR = await checkForDocsInPullRequestDiff({ github, context });
   if (isDocsPR) {
-    await github.rest.issues.addLabels({
-      issue_number: context.issue.number,
-      owner: context.repo.owner,
-      repo: context.repo.repo,
-      labels: ["site-documentation"],
-    });
-    console.log("Added documentation label");
+  if (isDocsPR) {
+    try {
+      await github.rest.issues.addLabels({
+        issue_number: context.issue.number,
+        owner: context.repo.owner,
+        repo: context.repo.repo,
+        labels: ["site-documentation"],
+      });
+      console.log("Added documentation label");
+    } catch (error) {
+      console.error("Failed to add documentation label:", error);
+    }
+  }
   }
 
   for (const extensionFolder of touchedExtensions) {
