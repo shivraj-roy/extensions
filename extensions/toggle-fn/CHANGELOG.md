@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.0] - 2026-01-28
+## [1.1.0] - {PR_MERGE_DATE}
 
 ### Improved
 
